@@ -50,31 +50,28 @@ function Login({ error, setError, setUser, userAdded }) {
 
   return (
     <div className="login">
-      <div className="top">
-        <img src={userIcon} alt="user_icon" id="userIcon" />
-      </div>
-      <div className="bottom">
-        <form id="loginform" autoComplete="off">
-          {error !== "" ? <div className="error">{error}</div> : ""}
-          {userAdded !== "" ? <div className="message">{userAdded}</div> : ""}
-          <input
-            type="text"
-            name="username"
-            id="username"
-            placeholder="ID"
-            onChange={(e) =>
-              setLoginInfo({ ...loginInfo, username: e.target.value })
-            }
-          />
-          <input
-            type="password"
-            name="password"
-            id="password"
-            placeholder="Password"
-            onChange={(e) =>
-              setLoginInfo({ ...loginInfo, password: e.target.value })
-            }
-          />
+      <form id="loginform" autoComplete="off">
+        {error !== "" ? <div className="error">{error}</div> : ""}
+        {userAdded !== "" ? <div className="message">{userAdded}</div> : ""}
+        <input
+          type="text"
+          name="username"
+          id="username"
+          placeholder="Username"
+          onChange={(e) =>
+            setLoginInfo({ ...loginInfo, username: e.target.value })
+          }
+        />
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Password"
+          onChange={(e) =>
+            setLoginInfo({ ...loginInfo, password: e.target.value })
+          }
+        />
+        <div className="buttons">
           <input
             className="button2"
             type="button"
@@ -87,8 +84,8 @@ function Login({ error, setError, setUser, userAdded }) {
             value="가입하기"
             onClick={(e) => signUpUser(e)}
           />
-        </form>
-      </div>
+        </div>
+      </form>
     </div>
   );
 }

@@ -23,7 +23,7 @@ function Navbar({ user, setUser, setUserAdded, login }) {
           <div className="bar2"></div>
           <div className="bar3"></div>
         </div>
-        <h1>정앤정 학습장 내 산만도 측정</h1>
+        <h1>맞춤형 안경 추천</h1>
       </div>
       {user.username ? (
         <button className="button2" onClick={() => logout()}>

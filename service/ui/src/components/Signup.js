@@ -71,7 +71,7 @@ function SignupPage({ error, setError, userAdded, setUserAdded }) {
             type="text"
             name="username"
             id="username"
-            placeholder="ID"
+            placeholder="Username"
             onChange={(e) =>
               setNewUserData({ ...newUserData, username: e.target.value })
             }
@@ -94,18 +94,20 @@ function SignupPage({ error, setError, userAdded, setUserAdded }) {
               setNewUserData({ ...newUserData, rePassword: e.target.value })
             }
           />
-          <input
-            className="button2"
-            type="button"
-            value="취소"
-            onClick={(e) => cancelSignup(e)}
-          />
-          <input
-            className="button2"
-            type="button"
-            value="가입하기"
-            onClick={(e) => signUpHandler(e)}
-          />
+          <div className="buttons">
+            <input
+              className="button2"
+              type="button"
+              value="취소"
+              onClick={(e) => cancelSignup(e)}
+            />
+            <input
+              className="button2"
+              type="button"
+              value="가입하기"
+              onClick={(e) => signUpHandler(e)}
+            />
+          </div>
         </form>
       </div>
     </div>

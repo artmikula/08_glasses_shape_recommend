@@ -3,8 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Login from "./components/Login";
 import Signup from "./components/Signup";
-import View1 from "./components/View1";
-import View2 from "./components/View2";
+import Main from "./components/Main";
 import Error from "./components/Error";
 
 function App() {
@@ -50,8 +49,7 @@ function App() {
                 />
               }
             ></Route>
-            <Route path="/view1" element={<View1 />}></Route>
-            <Route path="/view2" element={<View2 />}></Route>
+            <Route path="/main" element={<Main />}></Route>
             <Route path="/error" element={<Error />} />
           </Routes>
         </div>

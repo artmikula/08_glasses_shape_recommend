@@ -24,12 +24,11 @@ code {
 nav {
   width: 1000px;
   height: 60px;
-  background-color: #1abc9c;
-  margin: 25px;
+  background-color: #2ecc71;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-right: 30px;
+  outline: 5px solid #2ecc71;
 }
 
 nav h1 {
@@ -55,33 +54,13 @@ h2 {
   margin: 6px 0;
 }
 
-.login {
-  height: 500px;
-  width: 300px;
-  outline: 1px solid black;
-  box-shadow: 5px 10px 15px 4px rgba(0, 0, 0, 0.28);
-}
-
 .mainCont {
   height: 50vh;
-  /* width: 50vw; */
+  width: 1000px;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.top {
-  height: 55%;
-  background-color: #6bb9ed;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.bottom {
-  height: 45%;
-  background-color: #fafafa;
-  width: 100%;
+  outline: 5px solid #2ecc71;
 }
 
 #userIcon {
@@ -100,13 +79,14 @@ h2 {
   border: none;
   padding: 5px;
   width: 100px;
-  color: #6bb9ed;
+  color: white;
+  /* background-color: #2ecc71; */
   font-weight: bold;
-  font-size: 1em;
+  font-size: 0.9em;
 }
 
 #loginform input[type="button"]:hover {
-  background-color: rgb(209, 209, 209);
+  background-color: #1c8b4a;
 }
 
 #username,
@@ -237,10 +217,11 @@ table.GeneratedTable thead {
   border: none;
   padding: 5px;
   min-width: 100px;
-  color: #6bb9ed;
+  color: #fff;
   font-weight: bold;
   font-size: 1em;
   border-radius: 5px;
+  background-color: #2ecc71;
 }
 
 .button2:hover {
@@ -262,10 +243,23 @@ table.GeneratedTable thead {
 
 .signup {
   outline: 1px solid grey;
-  height: 100%;
+  height: 300px;
+  width: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 5px 10px 15px 4px rgba(0, 0, 0, 0.28);
+}
+
+.login {
+  height: 200px;
+  width: 300px;
+  outline: 1px solid black;
+  box-shadow: 5px 10px 15px 4px rgba(0, 0, 0, 0.28);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
 }
 
 #signupForm {
@@ -397,4 +391,115 @@ table.resultDataTable thead th {
   align-items: center;
   justify-content: space-evenly;
   font-size: 1.2em;
+}
+
+.buttons {
+  margin: 10px;
+}
+
+#mainCont2 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.mainCont3 {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.left,
+.middle {
+  width: 30%;
+  display: flex;
+  flex-direction: row;
+}
+
+.right {
+  width: 40%;
+}
+
+.image,
+.result {
+  height: 170px;
+  width: 160px;
+  background-color: #aaaaaa;
+}
+
+.result {
+  height: 170px;
+  width: 160px;
+  background-color: #aaaaaa;
+}
+
+.arrow {
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+  /* align-items: center;/ */
+  height: 100%;
+  max-width: 50px;
+  /* position: relative; */
+  margin-top: 85px;
+}
+
+#next_icon {
+  height: 30px;
+  width: 30px;
+}
+
+.innerCont {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  overflow: hidden;
+  text-align: center;
+  width: 90%;
+}
+
+#fileForm {
+  text-align: center;
+}
+
+#myFile {
+  width: 200px;
+  margin: 10px;
+}
+
+.table1 {
+  height: 135px;
+  border: 1px solid;
+  border-collapse: collapse;
+}
+.table1 th {
+  min-width: 45px;
+  border: 1px solid;
+  background: #2ecc71;
+}
+.table1 td {
+  border: 1px solid;
+  text-align: center;
+}
+
+.right {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  margin-top: 35px;
+}
+
+.arrow p {
+  font-size: 0.7em;
+}
+
+.face-images {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
